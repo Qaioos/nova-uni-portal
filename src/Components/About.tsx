@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useEffect } from "react";
 
 function About() {
@@ -110,6 +111,7 @@ function About() {
                         <div className="space-y-24">
                             <div className="relative flex flex-col md:flex-row items-center">
                                 <div className="md:w-1/2 md:pr-24 text-left md:text-right">
+                                <motion.div initial={{ x: -250 }} whileInView={{ x: 0 }}viewport={{once:true, amount:0.3}} transition={{ duration: 0.5 }}>
                                     <span className="text-secondary font-headline font-extrabold text-3xl block mb-2">
                                         1892
                                     </span>
@@ -123,20 +125,27 @@ function About() {
                                         philosophy with modern scientific
                                         inquiry.
                                     </p>
+                                </motion.div>
                                 </div>
                                 <div className="absolute left-4 md:left-1/2 w-8 h-8 bg-surface-container-lowest border-4 border-primary rounded-full transform -translate-x-1/2 z-10 flex items-center justify-center">
                                     <div className="w-2 h-2 bg-primary rounded-full"></div>
                                 </div>
                                 <div className="md:w-1/2 md:pl-24 hidden md:block">
+                                <motion.div initial={{ x: 250 }} whileInView={{ x: 0 }}viewport={{once:true, amount:0.3}} transition={{ duration: 0.5 }}>
+                                
                                     <img
                                         className="w-full h-64 object-cover grayscale opacity-80"
                                         alt="Vintage black and white photo of scholars in a high-ceilinged library with massive arched windows and mahogany desks"
                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT_87GsF2I7Qsj0sNId8wbJ1KWycQsMlle1IrYHGAyeqEC8xCyaFf9Ch9ehrl7-0nTVDajVM-6q8oWtniufph2KSsyD78NiXO49tOhjcSBSSDR5F727p5S8oA2F_i_49rhYx8TO_tRR0UVtdWZJ5ZBb9fjhtSRLiZBd4LNTet8f6MiQLlslOtGjUCe6YAMOvTyCnIBZzZCKFZg7-kxkVdzvsygLYxV-pTCZsHlhcXVmiNSkhvbbwwzNmU1771a3hQl_TvMfBxPHNGo"
                                     />
+                                </motion.div>
+
                                 </div>
                             </div>
                             <div className="relative flex flex-col md:flex-row-reverse items-center">
                                 <div className="md:w-1/2 md:pl-24">
+                                <motion.div initial={{ x: 250 }} whileInView={{ x: 0 }}viewport={{once:true, amount:0.3}} transition={{ duration: 0.5 }}>
+                                
                                     <span className="text-secondary font-headline font-extrabold text-3xl block mb-2">
                                         1945
                                     </span>
@@ -148,20 +157,26 @@ function About() {
                                         establishment of the Faculty of Social
                                         Sciences and Applied Ethics.
                                     </p>
+                                </motion.div>
+
                                 </div>
                                 <div className="absolute left-4 md:left-1/2 w-8 h-8 bg-surface-container-lowest border-4 border-primary rounded-full transform -translate-x-1/2 z-10 flex items-center justify-center">
                                     <div className="w-2 h-2 bg-primary rounded-full"></div>
                                 </div>
                                 <div className="md:w-1/2 md:pr-24 hidden md:block">
+                                <motion.div initial={{ x: -250 }} whileInView={{ x: 0 }}viewport={{once:true, amount:0.3}} transition={{ duration: 0.5 }}>
                                     <img
                                         className="w-full h-64 object-cover grayscale opacity-80"
                                         alt="Mid-century architectural blueprint of a university building with elegant clean lines and geometric proportions"
                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBgWr5klFSkELj_xHAKsU964YUnPRqHgj5o-Hz-DsHAlJs9qMh8_Z8Kip7OPt8sDxnBkjbr8hiOeH9t-acwuvYe9nlDPYIPX9c_zZItSqWKnE5ScwW3qfEX3FeekxMavj1SbKC206zGaibgnFibNh21di6Bp2ih6lTUFOIoRfV9uYtkII1mppEnw1TEQRbS3tNHMTeQAKh3UnGD5BkS2jWvhFm2LUgn30JsOIggAoBRpnu9C2ynxVmjEjdXg03c6TKCu_vK7uv1ZaW"
                                     />
+                                </motion.div>
                                 </div>
                             </div>
                             <div className="relative flex flex-col md:flex-row items-center">
                                 <div className="md:w-1/2 md:pr-24 text-left md:text-right">
+                                <motion.div initial={{ x: -250 }} whileInView={{ x: 0 }}viewport={{once:true, amount:0.3}} transition={{ duration: 0.5 }}>
+
                                     <span className="text-secondary font-headline font-extrabold text-3xl block mb-2">
                                         2010
                                     </span>
@@ -173,16 +188,22 @@ function About() {
                                         Hub, leading the global transition to
                                         open-access academic publishing.
                                     </p>
+                                </motion.div>
+
                                 </div>
                                 <div className="absolute left-4 md:left-1/2 w-8 h-8 bg-surface-container-lowest border-4 border-primary rounded-full transform -translate-x-1/2 z-10 flex items-center justify-center">
                                     <div className="w-2 h-2 bg-primary rounded-full"></div>
                                 </div>
                                 <div className="md:w-1/2 md:pl-24 hidden md:block">
+                                <motion.div initial={{ x: 250 }} whileInView={{ x: 0 }} viewport={{once:true, amount:0.3}} transition={{ duration: 0.5 }}>
+
                                     <img
                                         className="w-full h-64 object-cover"
                                         alt="Modern glass and steel research center interior with minimalist workstations and bright ambient lighting"
                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeWOmOvEN9TO9ni9AkwqIdopguzrDB54rUKPpY_LalYUJeTW-nI5SPIQ1RvNZMR_nQnhGM55qzyhucaJ8KoPje-TWzE0vDcizs5fLiwAOjGlgH9dRwWfdGDuMOSjAZEcfTq1rq4IF2RNvPCOct19QIGTSt7KSXVJZSdZKZVVDaXmbIuKxtC8iZxauCpFUDEqaMq-fMK6xJy6LwmaxTIPidK-78bO523VciZgOSjozqoXJWab8YqXzOKqnxLAB6nwXaKa0NLVQ-emW3"
                                     />
+                                </motion.div>
+
                                 </div>
                             </div>
                         </div>

@@ -2,6 +2,7 @@ import { Link, Route, BrowserRouter, Routes } from "react-router-dom";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import StudentLife from "./Components/StudentLife";
+import ContactUs from "./Components/ContactUs";
 function App() {
     return (
         <BrowserRouter>
@@ -30,6 +31,13 @@ function App() {
                         >
                             About
                         </Link>
+
+                                                <Link
+                            className="font-headline font-bold tracking-tight uppercase text-sm text-[#000a1e] dark:text-slate-300 hover:text-[#735c00] transition-colors"
+                            to="/contact-us"
+                        >
+                            Contact Us
+                        </Link>
                     </div>
                     <div className="flex items-center gap-6">
                         <button className="material-symbols-outlined text-primary">
@@ -46,6 +54,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/student-life" element={<StudentLife />} />
+                <Route path="/contact-us" element={<ContactUs />} />
             </Routes>
         </BrowserRouter>
     );

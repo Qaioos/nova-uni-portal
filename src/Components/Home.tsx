@@ -1,6 +1,6 @@
 import { useEffect, useState, useReducer } from "react";
 import { counterReducer, initialState } from "../Reducers/CounterReducer";
-
+import { motion } from "framer-motion";
 function Home() {
     const [scroll, setScroll] = useState(0);
     const [state, dispatch] = useReducer(counterReducer, initialState);
@@ -43,6 +43,7 @@ function Home() {
     }, [scroll, facultyCounter]);
 
     return (
+                <motion.p initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
         <div className="bg-surface font-body text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
             <main>
                 {/* <!-- Hero Section --> */}
@@ -479,6 +480,8 @@ function Home() {
             </div>
         </footer> */}
         </div>
+                </motion.p>
+
     );
 }
 

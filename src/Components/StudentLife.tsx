@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 type Section =
@@ -46,6 +47,7 @@ function StudentLife() {
     }, [scrollY]);
 
     return (
+        <motion.div initial={{ x: -250 }} animate={{ x: 0 }} transition={{ duration: 0.5 }}>
         <div className="bg-surface font-body text-on-surface overflow-x-hidden">
             <aside className="hidden lg:flex flex-col h-full w-64 fixed left-0 top-0 py-8 bg-[#f3f4f5] dark:bg-slate-900 z-40 mt-[72px] tonal-shift">
                 <div className="px-8 mb-12">
@@ -658,6 +660,7 @@ function StudentLife() {
                 </footer>
             </main>
         </div>
+        </motion.div>
     );
 }
 
