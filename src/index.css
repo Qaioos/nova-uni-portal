@@ -3,3 +3,13 @@
 html{
     scroll-behavior: smooth;
 }
+@media (max-width:720px) {
+    .scroll{
+        height: 20px;
+        overflow: scroll;
+    }
+    .scroll a{
+        display: flex;
+    }
+    
+}
