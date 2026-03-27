@@ -1,5 +1,6 @@
 import { Link, Route, BrowserRouter, Routes } from "react-router-dom";
 import Home from "./Components/Home";
+import About from "./Components/About";
 function App() {
     return (
         <BrowserRouter>
@@ -8,7 +9,7 @@ function App() {
                     <div className="text-2xl font-black tracking-tighter text-[#000a1e] dark:text-white font-headline">
                         Academic Editorial
                     </div>
-                    <div className="hidden md:flex items-center gap-8">
+                    <div className="scroll md:flex items-center gap-8">
                         <Link
                             className="font-headline font-bold tracking-tight uppercase text-sm text-[#000a1e] dark:text-slate-300 hover:text-[#735c00] transition-colors"
                             to="/"
@@ -42,6 +43,7 @@ function App() {
 
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
             </Routes>
         </BrowserRouter>
     );
